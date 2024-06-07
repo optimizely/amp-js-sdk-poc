@@ -11,6 +11,8 @@ We have used vite for JS bundling and some preparation purposes. To get the proj
 Make changes to `main.ts` or `index.html` if necessary. Then run - 
 
 ```
+# If not already installed
+npm run install
 npm run build
 ```
 Then to see the preview, run 
