@@ -1,9 +1,11 @@
 import {
-  createInstance,
+  createInstance
 } from "@optimizely/optimizely-sdk/dist/optimizely.lite.es";
 
+const REMOTE_DATAFILE_URL = "https://cdn.optimizely.com/datafiles/<YOUR_SDK_KEY>.json";
+
 const getDataFile = async () => {
-  const response = await fetch("https://cdn.optimizely.com/datafiles/QfzuBENUTuedBJn5HsHYh.json")
+  const response = await fetch(REMOTE_DATAFILE_URL)
   const data = await response.text()
   return data
 }
