@@ -12,10 +12,11 @@ Make changes to `main.ts` or `index.html` if necessary. Then run -
 
 ```
 # If not already installed
-npm run install
+npm install
 npm run build
 ```
-Then to see the preview, run 
+## Run
+After running the build command, you should see the newly created `dist` directory. Inside that you will find the **AMP valid** HTML document with the custom generated `<amp-script> tag . You have to serve this dist dirctory with a server to see it live. Now to preview it locally, you can run -
 
 ```
 npm run preview
